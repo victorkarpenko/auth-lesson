@@ -9,3 +9,7 @@ export const registerUser = (user) => async (dispatch) => {
 export const loginUser = (user) => async (dispatch) => {
 
 }
+
+export const logoutUser = (user) => async (dispatch) => {
+
+}

@@ -1,4 +1,3 @@
 1) create registration, login, logout redux logic
 2) Add persist
-3) Private route and redirect
-4) didMount check token and get
+3) check protected endpoint, dispatch success user

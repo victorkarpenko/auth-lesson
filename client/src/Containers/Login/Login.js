@@ -1,8 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import { loginUser } from "../../redux/operations";
+import { useDispatch } from "react-redux";
 import "./Login.css";
 
+const initialFormState = {
+  email: "",
+  password: "",
+};
+
 const Login = () => {
+  const [form, setForm] = useState(initialFormState);
+
+  const inputHandler = ({ target }) => {
+    const name = target.name;
+    const value = target.value;
+    setForm({ ...form, [name]: value });
+  };
+
+  const dispatch = useDispatch();
   const onSubmit = (e) => {
     e.preventDefault();
     dispatch(loginUser(form));
@@ -19,6 +34,9 @@ const Login = () => {
           className="form-control"
           placeholder="Enter email"
           autoComplete="off"
+          value={form.email}
+          name='email'
+          onChange={inputHandler}
         />
       </div>
 
@@ -29,6 +47,9 @@ const Login = () => {
           className="form-control"
           placeholder="Enter password"
           autoComplete="off"
+          value={form.password}
+          name='password'
+          onChange={inputHandler}
         />
       </div>
 
