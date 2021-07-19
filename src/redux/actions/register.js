@@ -1,15 +1,15 @@
 import {
   REGISTRATION_ERROR,
   REGISTRATION_REQUEST,
-  REGISTRATION_SUCCESS,
+  REQUEST_SUCCESS,
 } from "../types";
 
 export const registrationRequest = () => ({
   type: REGISTRATION_REQUEST,
 });
 
-export const registrationSuccess = (user) => ({
-  type: REGISTRATION_SUCCESS,
+export const requestSuccess = (user) => ({
+  type: REQUEST_SUCCESS,
   payload: user,
 });
 

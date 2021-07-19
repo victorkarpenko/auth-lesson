@@ -7,3 +7,5 @@ export const TOKEN_SET = "auth/setToken";
 export const LOGIN_REQUEST = "auth/loginRequest";
 export const LOGIN_SUCCESS = "auth/loginSuccess";
 export const LOGIN_ERROR = "auth/loginError";
+
+export const REQUEST_SUCCESS = 'auth/requestSuccess';

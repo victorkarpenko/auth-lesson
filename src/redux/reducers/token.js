@@ -1,5 +1,7 @@
 import { TOKEN_SET } from "../types";
-const initialState = null;
+const initialState = {
+  token: null,
+};
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {

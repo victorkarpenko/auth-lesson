@@ -1,0 +1,8 @@
+.LogoutBtnContainer{
+    display: flex;
+    align-items: center;
+}
+
+.LogoutBtnContainer__userName{
+    margin-right: 5px;
+}
