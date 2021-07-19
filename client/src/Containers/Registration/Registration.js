@@ -7,8 +7,7 @@ import { useDispatch } from "react-redux";
 const initialFormState = {
   email: "",
   password: "",
-  firstName: "",
-  lastName: "",
+  name: "",
 };
 
 const Registration = () => {
@@ -31,24 +30,13 @@ const Registration = () => {
       <h3>Sign Up</h3>
 
       <div className="form-group">
-        <label>First name</label>
+        <label>Name</label>
         <input
           type="text"
           className="form-control"
-          placeholder="First name"
+          placeholder="Name"
           onChange={inputHandler}
-          name="firstName"
-        />
-      </div>
-
-      <div className="form-group">
-        <label>Last name</label>
-        <input
-          type="text"
-          className="form-control"
-          placeholder="Last name"
-          onChange={inputHandler}
-          name="lastName"
+          name="name"
         />
       </div>
 
